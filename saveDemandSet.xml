@@ -1,0 +1,23 @@
+<Header DISCO_FILE="DmdSet" Version="1.1">
+    <VisInfo Type_VisInfo="Naming" Name="" Details="">
+        <Secrets/>
+    </VisInfo>
+    <CellPreLoads/>
+    <DmdLoaders>
+        <DmdLoader CellId="85" Type_DmdLoad="Continuous">
+            <Loadings>
+                <Loading startTime="0" endTime="120000" rate="0.35039139783139878"/>
+            </Loadings>
+        </DmdLoader>
+        <DmdLoader CellId="86" Type_DmdLoad="Continuous">
+            <Loadings>
+                <Loading startTime="0" endTime="120000" rate="0.063671058377604506"/>
+            </Loadings>
+        </DmdLoader>
+        <DmdLoader CellId="90" Type_DmdLoad="Continuous">
+            <Loadings>
+                <Loading startTime="0" endTime="120000" rate="0.1427813353298325"/>
+            </Loadings>
+        </DmdLoader>
+    </DmdLoaders>
+</Header>

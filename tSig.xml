@@ -1,0 +1,14 @@
+<Header DISCO_FILE="SigSet" Version="1.1">
+    <VisInfo Type_VisInfo="Naming" Name="" Details="">
+        <Secrets/>
+    </VisInfo>
+    <SigCtrls>
+        <SigCtrl JctId="2560" Type_SigCtrl="FGFC" CycleTime="120" OffSet="0">
+            <SigGpTimes>
+                <SigGpTime SigGpId="1" OnT="8" OffT="39"/>
+                <SigGpTime SigGpId="2" OnT="48" OffT="79"/>
+                <SigGpTime SigGpId="3" OnT="83" OffT="119"/>
+            </SigGpTimes>
+        </SigCtrl>
+    </SigCtrls>
+</Header>

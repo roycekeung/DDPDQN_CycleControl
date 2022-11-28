@@ -1,0 +1,179 @@
+<Header DISCO_FILE="Adaptive_LogicReq">
+    <I_Logic type="4">
+        <s0>
+            <st>
+                <I_Logic type="2" LogicWrapType="1">
+                    <I_Logic type="1" reqType="21"/>
+                    <I_Logic type="3">
+                        <I_Logic type="1" reqType="11" policyId="0"/>
+                    </I_Logic>
+                    <I_Logic type="1" reqType="14" timeMod="-10"/>
+                </I_Logic>
+            </st>
+            <si>
+                <I_Logic type="4">
+                    <s0>
+                        <st>
+                            <I_Logic type="1" reqType="13" stageId="0"/>
+                        </st>
+                        <si>
+                            <I_Logic type="4">
+                                <s0>
+                                    <st>
+                                        <I_Logic type="2" LogicWrapType="1">
+                                            <I_Logic type="2" LogicWrapType="0">
+                                                <I_Logic type="1" reqType="22" cellId="18" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                            </I_Logic>
+                                            <I_Logic type="3">
+                                                <I_Logic type="2" LogicWrapType="0">
+                                                    <I_Logic type="1" reqType="22" cellId="77" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                    <I_Logic type="1" reqType="22" cellId="115" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                    <I_Logic type="1" reqType="22" cellId="116" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                </I_Logic>
+                                            </I_Logic>
+                                        </I_Logic>
+                                    </st>
+                                    <si>
+                                        <I_Logic type="1" reqType="1" policyId="3" atStageEnd="true" startStageIndex="1" resumeStageIndex="1"/>
+                                    </si>
+                                </s0>
+                                <s1>
+                                    <st>
+                                        <I_Logic type="2" LogicWrapType="1">
+                                            <I_Logic type="2" LogicWrapType="0">
+                                                <I_Logic type="1" reqType="22" cellId="77" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                <I_Logic type="1" reqType="22" cellId="115" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                <I_Logic type="1" reqType="22" cellId="116" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                            </I_Logic>
+                                            <I_Logic type="3">
+                                                <I_Logic type="2" LogicWrapType="0">
+                                                    <I_Logic type="1" reqType="22" cellId="18" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                </I_Logic>
+                                            </I_Logic>
+                                        </I_Logic>
+                                    </st>
+                                    <si>
+                                        <I_Logic type="1" reqType="1" policyId="2" atStageEnd="true" startStageIndex="1" resumeStageIndex="1"/>
+                                    </si>
+                                </s1>
+                                <se>
+                                    <I_Logic type="0"/>
+                                </se>
+                            </I_Logic>
+                        </si>
+                    </s0>
+                    <s1>
+                        <st>
+                            <I_Logic type="1" reqType="13" stageId="1"/>
+                        </st>
+                        <si>
+                            <I_Logic type="4">
+                                <s0>
+                                    <st>
+                                        <I_Logic type="2" LogicWrapType="1">
+                                            <I_Logic type="2" LogicWrapType="0">
+                                                <I_Logic type="1" reqType="22" cellId="2" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                <I_Logic type="1" reqType="22" cellId="97" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                <I_Logic type="1" reqType="22" cellId="98" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                            </I_Logic>
+                                            <I_Logic type="3">
+                                                <I_Logic type="2" LogicWrapType="0">
+                                                    <I_Logic type="1" reqType="22" cellId="18" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                </I_Logic>
+                                            </I_Logic>
+                                        </I_Logic>
+                                    </st>
+                                    <si>
+                                        <I_Logic type="1" reqType="1" policyId="1" atStageEnd="true" startStageIndex="2" resumeStageIndex="2"/>
+                                    </si>
+                                </s0>
+                                <s1>
+                                    <st>
+                                        <I_Logic type="2" LogicWrapType="1">
+                                            <I_Logic type="2" LogicWrapType="0">
+                                                <I_Logic type="1" reqType="22" cellId="18" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                            </I_Logic>
+                                            <I_Logic type="3">
+                                                <I_Logic type="2" LogicWrapType="0">
+                                                    <I_Logic type="1" reqType="22" cellId="2" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                    <I_Logic type="1" reqType="22" cellId="97" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                    <I_Logic type="1" reqType="22" cellId="98" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                </I_Logic>
+                                            </I_Logic>
+                                        </I_Logic>
+                                    </st>
+                                    <si>
+                                        <I_Logic type="1" reqType="1" policyId="3" atStageEnd="true" startStageIndex="2" resumeStageIndex="2"/>
+                                    </si>
+                                </s1>
+                                <se>
+                                    <I_Logic type="0"/>
+                                </se>
+                            </I_Logic>
+                        </si>
+                    </s1>
+                    <s2>
+                        <st>
+                            <I_Logic type="1" reqType="13" stageId="2"/>
+                        </st>
+                        <si>
+                            <I_Logic type="4">
+                                <s0>
+                                    <st>
+                                        <I_Logic type="2" LogicWrapType="1">
+                                            <I_Logic type="2" LogicWrapType="0">
+                                                <I_Logic type="1" reqType="22" cellId="2" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                <I_Logic type="1" reqType="22" cellId="97" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                <I_Logic type="1" reqType="22" cellId="98" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                            </I_Logic>
+                                            <I_Logic type="3">
+                                                <I_Logic type="2" LogicWrapType="0">
+                                                    <I_Logic type="1" reqType="22" cellId="77" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                    <I_Logic type="1" reqType="22" cellId="115" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                    <I_Logic type="1" reqType="22" cellId="116" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                </I_Logic>
+                                            </I_Logic>
+                                        </I_Logic>
+                                    </st>
+                                    <si>
+                                        <I_Logic type="1" reqType="2" asap="true" tMod="1"/>
+                                    </si>
+                                </s0>
+                                <s1>
+                                    <st>
+                                        <I_Logic type="2" LogicWrapType="1">
+                                            <I_Logic type="2" LogicWrapType="0">
+                                                <I_Logic type="1" reqType="22" cellId="77" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                <I_Logic type="1" reqType="22" cellId="115" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                <I_Logic type="1" reqType="22" cellId="116" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                            </I_Logic>
+                                            <I_Logic type="3">
+                                                <I_Logic type="2" LogicWrapType="0">
+                                                    <I_Logic type="1" reqType="22" cellId="2" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                    <I_Logic type="1" reqType="22" cellId="97" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                    <I_Logic type="1" reqType="22" cellId="98" tMod="3000" nTSteps="1" threshold="0.69999999999999996"/>
+                                                </I_Logic>
+                                            </I_Logic>
+                                        </I_Logic>
+                                    </st>
+                                    <si>
+                                        <I_Logic type="1" reqType="1" policyId="2" atStageEnd="false" startStageIndex="0" resumeStageIndex="0"/>
+                                    </si>
+                                </s1>
+                                <se>
+                                    <I_Logic type="0"/>
+                                </se>
+                            </I_Logic>
+                        </si>
+                    </s2>
+                    <se>
+                        <I_Logic type="0"/>
+                    </se>
+                </I_Logic>
+            </si>
+        </s0>
+        <se>
+            <I_Logic type="0"/>
+        </se>
+    </I_Logic>
+</Header>

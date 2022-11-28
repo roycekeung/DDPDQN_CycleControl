@@ -1,0 +1,119 @@
+<Header DISCO_FILE="SigConvertorTDHK" Version="1.1">
+    <SigDatas>
+        <SigData SigId="2560">
+            <SigGpDatas>
+                <SigGpData SigGpId="1" SigGpType="0" RedAmberTime="2" MinGreenTime="5" AmberTime="3" PedWalkTime="0" PedClear1Time="0" PedClear2Time="0">
+                    <InStages p0="0"/>
+                </SigGpData>
+                <SigGpData SigGpId="2" SigGpType="0" RedAmberTime="2" MinGreenTime="5" AmberTime="3" PedWalkTime="0" PedClear1Time="0" PedClear2Time="0">
+                    <InStages p0="1"/>
+                </SigGpData>
+                <SigGpData SigGpId="3" SigGpType="0" RedAmberTime="2" MinGreenTime="5" AmberTime="3" PedWalkTime="0" PedClear1Time="0" PedClear2Time="0">
+                    <InStages p0="2"/>
+                </SigGpData>
+            </SigGpDatas>
+            <StageDatas>
+                <StageData StageId="0" StageMinTime="5" GreenMinTime="5" GreenMaxTime="20">
+                    <HasGps p0="1"/>
+                    <PermittedStages p0="1" p1="2"/>
+                </StageData>
+                <StageData StageId="1" StageMinTime="5" GreenMinTime="5" GreenMaxTime="20">
+                    <HasGps p0="2"/>
+                    <PermittedStages p0="2" p1="0"/>
+                </StageData>
+                <StageData StageId="2" StageMinTime="5" GreenMinTime="5" GreenMaxTime="20">
+                    <HasGps p0="3"/>
+                    <PermittedStages p0="0" p1="1"/>
+                </StageData>
+            </StageDatas>
+            <StageChangeDatas>
+                <StageChangeData FromStageId="2" ToStageId="0">
+                    <StageEndDatas>
+                        <StageEndData SigGpId="3" EarlyCutOffTime="0" PostAllRed="0" ExtendEndTime="0"/>
+                    </StageEndDatas>
+                    <StageStartDatas>
+                        <StageStartData SigGpId="1" ExtendStartTime="0" LateStartTime="5"/>
+                    </StageStartDatas>
+                </StageChangeData>
+                <StageChangeData FromStageId="2" ToStageId="1">
+                    <StageEndDatas>
+                        <StageEndData SigGpId="3" EarlyCutOffTime="0" PostAllRed="0" ExtendEndTime="0"/>
+                    </StageEndDatas>
+                    <StageStartDatas>
+                        <StageStartData SigGpId="2" ExtendStartTime="0" LateStartTime="0"/>
+                    </StageStartDatas>
+                </StageChangeData>
+                <StageChangeData FromStageId="1" ToStageId="0">
+                    <StageEndDatas>
+                        <StageEndData SigGpId="2" EarlyCutOffTime="5" PostAllRed="0" ExtendEndTime="0"/>
+                    </StageEndDatas>
+                    <StageStartDatas>
+                        <StageStartData SigGpId="1" ExtendStartTime="0" LateStartTime="0"/>
+                    </StageStartDatas>
+                </StageChangeData>
+                <StageChangeData FromStageId="1" ToStageId="2">
+                    <StageEndDatas>
+                        <StageEndData SigGpId="2" EarlyCutOffTime="0" PostAllRed="0" ExtendEndTime="0"/>
+                    </StageEndDatas>
+                    <StageStartDatas>
+                        <StageStartData SigGpId="3" ExtendStartTime="0" LateStartTime="0"/>
+                    </StageStartDatas>
+                </StageChangeData>
+                <StageChangeData FromStageId="0" ToStageId="1">
+                    <StageEndDatas>
+                        <StageEndData SigGpId="1" EarlyCutOffTime="0" PostAllRed="0" ExtendEndTime="0"/>
+                    </StageEndDatas>
+                    <StageStartDatas>
+                        <StageStartData SigGpId="2" ExtendStartTime="0" LateStartTime="5"/>
+                    </StageStartDatas>
+                </StageChangeData>
+                <StageChangeData FromStageId="0" ToStageId="2">
+                    <StageEndDatas>
+                        <StageEndData SigGpId="1" EarlyCutOffTime="0" PostAllRed="0" ExtendEndTime="0"/>
+                    </StageEndDatas>
+                    <StageStartDatas>
+                        <StageStartData SigGpId="3" ExtendStartTime="0" LateStartTime="5"/>
+                    </StageStartDatas>
+                </StageChangeData>
+            </StageChangeDatas>
+        </SigData>
+    </SigDatas>
+    <Plans>
+        <PlanDatas PlanId="0">
+            <PlanData SigId="2560" PlanType="0" CycleTime="120" Offset="0">
+                <Sequence>
+                    <PlanStageData_0 StageId="0" PlanStageType="2" Value="40" StageStartTime="0" StageEndTime="40"/>
+                    <PlanStageData_1 StageId="1" PlanStageType="2" Value="40" StageStartTime="40" StageEndTime="80"/>
+                    <PlanStageData_2 StageId="2" PlanStageType="2" Value="40" StageStartTime="80" StageEndTime="120"/>
+                </Sequence>
+            </PlanData>
+        </PlanDatas>
+        <PlanDatas PlanId="1">
+            <PlanData SigId="2560" PlanType="0" CycleTime="120" Offset="0">
+                <Sequence>
+                    <PlanStageData_0 StageId="0" PlanStageType="2" Value="60" StageStartTime="0" StageEndTime="60"/>
+                    <PlanStageData_1 StageId="1" PlanStageType="2" Value="30" StageStartTime="60" StageEndTime="90"/>
+                    <PlanStageData_2 StageId="2" PlanStageType="2" Value="30" StageStartTime="90" StageEndTime="120"/>
+                </Sequence>
+            </PlanData>
+        </PlanDatas>
+        <PlanDatas PlanId="2">
+            <PlanData SigId="2560" PlanType="0" CycleTime="120" Offset="120">
+                <Sequence>
+                    <PlanStageData_0 StageId="0" PlanStageType="2" Value="30" StageStartTime="0" StageEndTime="30"/>
+                    <PlanStageData_1 StageId="1" PlanStageType="2" Value="60" StageStartTime="30" StageEndTime="90"/>
+                    <PlanStageData_2 StageId="2" PlanStageType="2" Value="30" StageStartTime="90" StageEndTime="120"/>
+                </Sequence>
+            </PlanData>
+        </PlanDatas>
+        <PlanDatas PlanId="3">
+            <PlanData SigId="2560" PlanType="0" CycleTime="120" Offset="120">
+                <Sequence>
+                    <PlanStageData_0 StageId="0" PlanStageType="2" Value="30" StageStartTime="0" StageEndTime="30"/>
+                    <PlanStageData_1 StageId="1" PlanStageType="2" Value="30" StageStartTime="30" StageEndTime="60"/>
+                    <PlanStageData_2 StageId="2" PlanStageType="2" Value="60" StageStartTime="60" StageEndTime="120"/>
+                </Sequence>
+            </PlanData>
+        </PlanDatas>
+    </Plans>
+</Header>
