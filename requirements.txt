@@ -3,6 +3,7 @@ tensorflow==1.15.2
 tensorflow-estimator==1.15.1
 tensorflow-gpu==2.3.1
 tensorflow-gpu-estimator==2.3.0
+tensorflow_addons==0.18.0
 h5py==2.10.0
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
