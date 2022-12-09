@@ -1,0 +1,7 @@
+*.md
+*/.git
+*/__pycache__*
+*/logs*
+*/wandb?
+*/test*
+*.jpg

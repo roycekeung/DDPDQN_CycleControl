@@ -1,7 +1,8 @@
 
+# FROM python:3.7-windowsservercore-1809 
 FROM python:3.7
 
-LABEL maintainer="Test"
+LABEL maintainer="NP3DQN"
 
 # Working directory is / by default. We explictly state it here for posterity
 WORKDIR /
@@ -13,23 +14,28 @@ RUN apt-get update \
        curl \
        cmake 
 
-# Upgrade pip3
-RUN pip3 install --upgrade pip
+# Upgrade pip
+RUN pip install --upgrade pip
 
 # - copy src files
-COPY . /test
+COPY . /user/src/ml 
 
-# Move the requirements file into the image
-COPY requirements.txt /test/
+# # Move the requirements file into the image
+# COPY requirements.txt /test/
 
-# Install the python requirements on the image
-RUN pip3 install --trusted-host pypi.python.org --no-cache-dir -r /test/requirements.txt
+# # Move the requirements file into the image
+COPY requirements.txt ./user/src/ml  
+RUN pip install --no-cache-dir -r ./user/src/ml/requirements.txt --user 
+COPY . . 
+
+# # Install the python requirements on the image
+# RUN pip install --trusted-host pypi.python.org --no-cache-dir -r /test/requirements.txt
 
 # Remove the requirements file - this is no longer needed
-RUN rm /test/requirements.txt
+RUN rm /user/src/ml/requirements.txt
 
 # Set it as the working directory
-WORKDIR /test/
+WORKDIR /user/src/ml 
 
 ### probably need Cmake to dynamically compile CTM or init Vissim as env here; then do it in bash script
 
@@ -45,4 +51,4 @@ WORKDIR /test/
 # ENTRYPOINT ["/usr/local/bin/startup_script.sh"]
 
 ### start run python
-CMD [ "python3", "main.py"]
+CMD [ "python", "main.py"]
