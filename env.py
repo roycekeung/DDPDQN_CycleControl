@@ -1,7 +1,6 @@
     
 from config import *
 from Utils import Genid, TimingplanStruct, ActionsContainer
-from overloading import overload
 
 from xml.dom import minidom
 import pandas as pd
@@ -245,21 +244,6 @@ class Environment(object):
         
         return next_state, reward, is_done
         
-    
-    # @overload
-    # def addin_action(self, obj)->None:
-    #     if isinstance(TimingplanStruct, obj):
-    #         self.__Actionobjs.Container.append(obj)
-        
-    # @overload
-    # def addin_action(self, GenSigidObj, agentid:int, sigtiming:list, StageName:list)->None:
-    #     self.__Actionobjs.Container.append(TimingplanStruct(GenSigidObj=GenSigidObj, agentid=agentid, sigtiming=sigtiming, StageName=StageName))
-        
-    # def addin__Actionobjs(self, *args)->None:
-    #     for arg in args:       
-    #         if isinstance(TimingplanStruct, arg):
-    #             self.__Actionobjs.Container.append(arg)
-
     
     
     

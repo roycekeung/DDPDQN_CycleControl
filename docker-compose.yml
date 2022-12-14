@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mount:
+    container_name: NP3DQN
+    # restart: always
+    image: rl-np3dqn:NP3DQN_v1
+
+    volumes:
+      - 'D://Royce//RL//code//DDPDQN_CycleControl//results:.//user//src//ml '
+
+    # env_file:
+    #   - '.env'

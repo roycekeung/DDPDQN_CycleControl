@@ -4,16 +4,12 @@
 import tensorflow as tf
 from tensorflow.keras.layers import Input, Dense, Dropout, Activation, Flatten, \
     Conv1D, Conv2D, MaxPool2D, LeakyReLU, Add
-
 from tensorflow_addons.layers import NoisyDense 
-import pickle
-
 
 import numpy as np
 from collections import deque
 
 from config import *
-
 from DQNtype import AlgoType, ArchType
 
 

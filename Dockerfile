@@ -1,21 +1,21 @@
 
-# FROM python:3.7-windowsservercore-1809 
-FROM python:3.7
+FROM python:3.7.8-windowsservercore-1809
+# FROM python:3.7
 
 LABEL maintainer="NP3DQN"
 
 # Working directory is / by default. We explictly state it here for posterity
 WORKDIR /
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-       apt-utils \
-       build-essential \
-       curl \
-       cmake 
+# RUN apt-get update \
+#     && apt-get install -y --no-install-recommends \
+#        apt-utils \
+#        build-essential \
+#        curl \
+#        cmake 
 
 # Upgrade pip
-RUN pip install --upgrade pip
+RUN pip install --upgrade pip --user 
 
 # - copy src files
 COPY . /user/src/ml 
